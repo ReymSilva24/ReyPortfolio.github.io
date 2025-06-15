@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio ni Reymond</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "TTRphPQPQIb8Esxnp",
+            });
+        })();
+    </script>
+
+</head>
+<body>
+    
+    <nav>
+        <a href="index.html" class="logo"><span>Reymond</span></a>
+
+        <ul class="links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="#contact">Contacts</a>
+        </ul>
+
+        <i class="fa-solid fa-bars" id="menu"></i>
+
+        <a href="#contact" class="btn">Contact Me</a>
+
+    </nav>
+
+  
+    <section id="contact">
+        
+        <h1 class="header"><span>Contact Me</span></h1>
+           
+        <form onsubmit="sendMail(event)">
+                  
+            <div class="inputbox-cont">
+
+                    <div class="input-box">
+                        <span>Full Name</span>
+                        <input type="text" id ="name" required placeholder="Enter your Full Name">
+                    </div>
+
+                    <div class="input-box">
+                        <span>Email</span>
+                        <input type="text" id ="email" required placeholder="Enter your Email">
+                    </div>
+
+                    <div class="input-box">
+                        <span>Message</span>
+                        <input type="text" id ="message" required placeholder="Enter your Message">
+                    </div>
+
+                </div>
+                <div class="btn-cont">
+                    <button type= "submit" onclick="sendMail()" class="btn">Sumbmit</button>
+                </div>
+                
+        </form>
+        
+    </section>
+       
+
+    <footer>
+
+        <div class="col-left">
+
+            <div class="col-box">
+                <span><i class="fa-solid fa-location-dot"></i></span>
+                <span>#282 Maunlad St. Las Piñas City </span>
+            </div>
+
+            <div class="col-box">
+                <span><i class="fa-solid fa-phone"></i></span>
+                <span>+1 1234 567819 </span>
+            </div>
+
+            <div class="col-box">
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <span>mortegareymond@gmail.com</span>
+            </div>
+        </div>
+
+
+
+        <div class="col-right">
+            <h3>About My Service</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ipsam molestiae obcaecati magni unde dignissimos expedita ea. Similique debitis quidem, placeat nesciunt alias omnis deserunt tenetur incidunt, accusantium natus laborum?</p>
+            
+            <div class="icons">
+
+                <a href="https://web.facebook.com/rymndmortega24"><span><i class="fa-brands fa-facebook"></i></span></a>
+                <a href="#"><span><i class="fa-brands fa-instagram"></i></span></a>
+                <a href="#"><span><i class="fa-brands fa-linkedin"></i><span></span></a>
+                <a href="#"><span><i class="fa-brands fa-github"></i></span></a>
+                
+                
+                
+            </div>
+        </div>
+
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
